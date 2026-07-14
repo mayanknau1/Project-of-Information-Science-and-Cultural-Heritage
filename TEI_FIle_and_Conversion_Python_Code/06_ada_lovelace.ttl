@@ -1,0 +1,465 @@
+@prefix : <https://w3id.org/adalovelaceproject/> .
+@prefix concept: <https://w3id.org/adalovelaceproject/concept/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix event: <https://w3id.org/adalovelaceproject/event/> .
+@prefix frbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix manif: <https://w3id.org/adalovelaceproject/manifestation/> .
+@prefix obj: <https://w3id.org/adalovelaceproject/object/> .
+@prefix org1: <https://w3id.org/adalovelaceproject/org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <https://w3id.org/adalovelaceproject/person/> .
+@prefix place: <https://w3id.org/adalovelaceproject/place/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ts: <https://w3id.org/adalovelaceproject/timespan/> .
+@prefix type: <https://w3id.org/adalovelaceproject/type/> .
+@prefix work: <https://w3id.org/adalovelaceproject/work/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+concept:poetical_science a skos:Concept ;
+    skos:inScheme concept:scheme ;
+    skos:prefLabel "Poetical science"@en .
+
+:dataset a owl:Ontology ;
+    dc:creator "Mr. Tuco"@en ;
+    dc:date "2026"^^xsd:gYear ;
+    dc:description "RDF dataset derived from the TEI-encoded Wikipedia article on Ada Lovelace, following a CIDOC-CRM + FRBRoo + SKOS + DC + OWL model."@en ;
+    dc:title "Ada Lovelace LODLAM project — RDF dataset"@en .
+
+event:ada_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Augusta Ada King Countess of Lovelace"@en ;
+    crm:P4_has_time-span ts:1815-12-10 ;
+    crm:P7_took_place_at place:london ;
+    crm:P96_by_mother person:milbanke ;
+    crm:P97_from_father person:byron ;
+    crm:P98_brought_into_life person:ada .
+
+event:ada_burial a crm:E5_Event ;
+    rdfs:label "Burial of Ada Lovelace"@en ;
+    crm:P11_had_participant person:ada ;
+    crm:P2_has_type type:Burial ;
+    crm:P7_took_place_at place:hucknall_church .
+
+event:ada_death a crm:E69_Death ;
+    rdfs:label "Death of Augusta Ada King Countess of Lovelace"@en ;
+    crm:P100_was_death_of person:ada ;
+    crm:P4_has_time-span ts:1852-11-27 ;
+    crm:P7_took_place_at place:london .
+
+event:analytical_engine_design a crm:E12_Production ;
+    rdfs:label "Design of the Analytical Engine by Charles Babbage"@en ;
+    crm:P108_has_produced obj:analytical_engine ;
+    crm:P14_carried_out_by person:babbage .
+
+event:babbage_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Charles Babbage"@en ;
+    crm:P4_has_time-span ts:1791-12-26 ;
+    crm:P98_brought_into_life person:babbage .
+
+event:babbage_death a crm:E69_Death ;
+    rdfs:label "Death of Charles Babbage"@en ;
+    crm:P100_was_death_of person:babbage ;
+    crm:P4_has_time-span ts:1871-10-18 .
+
+event:byron_birth a crm:E67_Birth ;
+    rdfs:label "Birth of George Gordon Byron 6th Baron Byron"@en ;
+    crm:P4_has_time-span ts:1788-01-22 ;
+    crm:P98_brought_into_life person:byron .
+
+event:byron_death a crm:E69_Death ;
+    rdfs:label "Death of George Gordon Byron 6th Baron Byron"@en ;
+    crm:P100_was_death_of person:byron ;
+    crm:P4_has_time-span ts:1824-04-19 .
+
+event:collaboration_ada_babbage a crm:E7_Activity ;
+    rdfs:label "Collaboration between Ada Lovelace and Charles Babbage"@en ;
+    crm:P14_carried_out_by person:ada,
+        person:babbage ;
+    crm:P2_has_type type:Collaboration .
+
+event:demorgan_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Augustus De Morgan"@en ;
+    crm:P4_has_time-span ts:1806-06-27 ;
+    crm:P98_brought_into_life person:demorgan .
+
+event:demorgan_death a crm:E69_Death ;
+    rdfs:label "Death of Augustus De Morgan"@en ;
+    crm:P100_was_death_of person:demorgan ;
+    crm:P4_has_time-span ts:1871-03-18 .
+
+event:dickens_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Charles Dickens"@en ;
+    crm:P4_has_time-span ts:1812-02-07 ;
+    crm:P98_brought_into_life person:dickens .
+
+event:dickens_death a crm:E69_Death ;
+    rdfs:label "Death of Charles Dickens"@en ;
+    crm:P100_was_death_of person:dickens ;
+    crm:P4_has_time-span ts:1870-06-09 .
+
+event:faraday_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Michael Faraday"@en ;
+    crm:P4_has_time-span ts:1791-09-22 ;
+    crm:P98_brought_into_life person:faraday .
+
+event:faraday_death a crm:E69_Death ;
+    rdfs:label "Death of Michael Faraday"@en ;
+    crm:P100_was_death_of person:faraday ;
+    crm:P4_has_time-span ts:1867-08-25 .
+
+event:introduction_1833 a crm:E5_Event ;
+    rdfs:label "Introduction of Ada to Babbage by Mary Somerville"@en ;
+    crm:P11_had_participant person:ada,
+        person:babbage,
+        person:somerville ;
+    crm:P2_has_type type:Introduction ;
+    crm:P4_has_time-span ts:1833-06-05 .
+
+event:king_birth a crm:E67_Birth ;
+    rdfs:label "Birth of William King-Noel 1st Earl of Lovelace"@en ;
+    crm:P4_has_time-span ts:1805-02-21 ;
+    crm:P98_brought_into_life person:king .
+
+event:king_death a crm:E69_Death ;
+    rdfs:label "Death of William King-Noel 1st Earl of Lovelace"@en ;
+    crm:P100_was_death_of person:king ;
+    crm:P4_has_time-span ts:1893-12-29 .
+
+event:menabrea_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Luigi Federico Menabrea"@en ;
+    crm:P4_has_time-span ts:1809-09-04 ;
+    crm:P98_brought_into_life person:menabrea .
+
+event:menabrea_death a crm:E69_Death ;
+    rdfs:label "Death of Luigi Federico Menabrea"@en ;
+    crm:P100_was_death_of person:menabrea ;
+    crm:P4_has_time-span ts:1896-05-24 .
+
+event:menabrea_writing_1842 a frbroo:F28_Expression_Creation ;
+    rdfs:label "Writing of the 1842 French article by Luigi Menabrea"@en ;
+    frbroo:R17_created work:menabrea_1842 ;
+    crm:P14_carried_out_by person:menabrea .
+
+event:milbanke_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Anne Isabella Milbanke Lady Byron"@en ;
+    crm:P4_has_time-span ts:1792-05-17 ;
+    crm:P98_brought_into_life person:milbanke .
+
+event:milbanke_death a crm:E69_Death ;
+    rdfs:label "Death of Anne Isabella Milbanke Lady Byron"@en ;
+    crm:P100_was_death_of person:milbanke ;
+    crm:P4_has_time-span ts:1860-05-16 .
+
+event:somerville_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Mary Somerville"@en ;
+    crm:P4_has_time-span ts:1780-12-26 ;
+    crm:P98_brought_into_life person:somerville .
+
+event:somerville_death a crm:E69_Death ;
+    rdfs:label "Death of Mary Somerville"@en ;
+    crm:P100_was_death_of person:somerville ;
+    crm:P4_has_time-span ts:1872-11-29 .
+
+event:translation_1842_1843 a frbroo:F28_Expression_Creation ;
+    rdfs:label "Translation of Menabrea and creation of the Notes (1842–43)"@en ;
+    frbroo:R17_created work:notes_1843 ;
+    frbroo:R18_created manif:notes_1843_taylor ;
+    crm:P11_had_participant person:wheatstone ;
+    crm:P14_carried_out_by person:ada ;
+    crm:P2_has_type type:Translation ;
+    crm:P4_has_time-span ts:1842_1843 .
+
+event:tutoring_by_demorgan a crm:E7_Activity ;
+    rdfs:label "Tutoring of Ada by demorgan"@en ;
+    crm:P11_had_participant person:ada ;
+    crm:P14_carried_out_by person:demorgan ;
+    crm:P2_has_type type:Tutoring .
+
+event:tutoring_by_somerville a crm:E7_Activity ;
+    rdfs:label "Tutoring of Ada by somerville"@en ;
+    crm:P11_had_participant person:ada ;
+    crm:P14_carried_out_by person:somerville ;
+    crm:P2_has_type type:Tutoring .
+
+event:wheatstone_birth a crm:E67_Birth ;
+    rdfs:label "Birth of Charles Wheatstone"@en ;
+    crm:P4_has_time-span ts:1802-02-06 ;
+    crm:P98_brought_into_life person:wheatstone .
+
+event:wheatstone_death a crm:E69_Death ;
+    rdfs:label "Death of Charles Wheatstone"@en ;
+    crm:P100_was_death_of person:wheatstone ;
+    crm:P4_has_time-span ts:1875-10-19 .
+
+obj:ada_language a crm:E22_Human-Made_Object ;
+    rdfs:label "Ada (programming language)"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q154755> .
+
+obj:difference_engine a crm:E22_Human-Made_Object ;
+    rdfs:label "Difference Engine"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q628007> .
+
+org1:uni_turin a crm:E74_Group ;
+    rdfs:label "University of Turin"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q499911> .
+
+place:turin a crm:E53_Place ;
+    rdfs:label "Turin"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q495>,
+        <https://www.geonames.org/3165524> .
+
+work:notes_work a frbroo:F1_Work ;
+    rdfs:label "The Notes (work)"@en ;
+    frbroo:R3_is_realised_in work:notes_1843 .
+
+concept:bernoulli_numbers a skos:Concept ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1338141> ;
+    skos:inScheme concept:scheme ;
+    skos:prefLabel "Bernoulli numbers"@en .
+
+concept:computing a skos:Concept ;
+    owl:sameAs <http://id.loc.gov/authorities/subjects/sh85029552> ;
+    skos:inScheme concept:scheme ;
+    skos:prefLabel "Computing"@en .
+
+concept:mathematics a skos:Concept ;
+    owl:sameAs <http://id.loc.gov/authorities/subjects/sh85082139> ;
+    skos:inScheme concept:scheme ;
+    skos:prefLabel "Mathematics"@en .
+
+manif:notes_1843_taylor a frbroo:F4_Manifestation_Singleton ;
+    rdfs:label "The Notes in Taylor's Scientific Memoirs, vol. 3 (1843)"@en ;
+    dc:date "1843"^^xsd:gYear ;
+    dc:publisher "Richard and John E. Taylor"@en .
+
+place:hucknall_church a crm:E53_Place ;
+    rdfs:label "Church of St Mary Magdalene"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5117286> .
+
+ts:1780-12-26 a crm:E52_Time-Span ;
+    rdfs:label "1780-12-26" ;
+    crm:P82_at_some_time_within "1780-12-26"^^xsd:date .
+
+ts:1788-01-22 a crm:E52_Time-Span ;
+    rdfs:label "1788-01-22" ;
+    crm:P82_at_some_time_within "1788-01-22"^^xsd:date .
+
+ts:1791-09-22 a crm:E52_Time-Span ;
+    rdfs:label "1791-09-22" ;
+    crm:P82_at_some_time_within "1791-09-22"^^xsd:date .
+
+ts:1791-12-26 a crm:E52_Time-Span ;
+    rdfs:label "1791-12-26" ;
+    crm:P82_at_some_time_within "1791-12-26"^^xsd:date .
+
+ts:1792-05-17 a crm:E52_Time-Span ;
+    rdfs:label "1792-05-17" ;
+    crm:P82_at_some_time_within "1792-05-17"^^xsd:date .
+
+ts:1802-02-06 a crm:E52_Time-Span ;
+    rdfs:label "1802-02-06" ;
+    crm:P82_at_some_time_within "1802-02-06"^^xsd:date .
+
+ts:1805-02-21 a crm:E52_Time-Span ;
+    rdfs:label "1805-02-21" ;
+    crm:P82_at_some_time_within "1805-02-21"^^xsd:date .
+
+ts:1806-06-27 a crm:E52_Time-Span ;
+    rdfs:label "1806-06-27" ;
+    crm:P82_at_some_time_within "1806-06-27"^^xsd:date .
+
+ts:1809-09-04 a crm:E52_Time-Span ;
+    rdfs:label "1809-09-04" ;
+    crm:P82_at_some_time_within "1809-09-04"^^xsd:date .
+
+ts:1812-02-07 a crm:E52_Time-Span ;
+    rdfs:label "1812-02-07" ;
+    crm:P82_at_some_time_within "1812-02-07"^^xsd:date .
+
+ts:1815-12-10 a crm:E52_Time-Span ;
+    rdfs:label "1815-12-10" ;
+    crm:P82_at_some_time_within "1815-12-10"^^xsd:date .
+
+ts:1824-04-19 a crm:E52_Time-Span ;
+    rdfs:label "1824-04-19" ;
+    crm:P82_at_some_time_within "1824-04-19"^^xsd:date .
+
+ts:1833-06-05 a crm:E52_Time-Span ;
+    rdfs:label "1833-06-05" ;
+    crm:P82_at_some_time_within "1833-06-05"^^xsd:date .
+
+ts:1842_1843 a crm:E52_Time-Span ;
+    rdfs:label "1842–1843"@en ;
+    crm:P82a_begin_of_the_begin "1842-01-01"^^xsd:date ;
+    crm:P82b_end_of_the_end "1843-12-31"^^xsd:date .
+
+ts:1852-11-27 a crm:E52_Time-Span ;
+    rdfs:label "1852-11-27" ;
+    crm:P82_at_some_time_within "1852-11-27"^^xsd:date .
+
+ts:1860-05-16 a crm:E52_Time-Span ;
+    rdfs:label "1860-05-16" ;
+    crm:P82_at_some_time_within "1860-05-16"^^xsd:date .
+
+ts:1867-08-25 a crm:E52_Time-Span ;
+    rdfs:label "1867-08-25" ;
+    crm:P82_at_some_time_within "1867-08-25"^^xsd:date .
+
+ts:1870-06-09 a crm:E52_Time-Span ;
+    rdfs:label "1870-06-09" ;
+    crm:P82_at_some_time_within "1870-06-09"^^xsd:date .
+
+ts:1871-03-18 a crm:E52_Time-Span ;
+    rdfs:label "1871-03-18" ;
+    crm:P82_at_some_time_within "1871-03-18"^^xsd:date .
+
+ts:1871-10-18 a crm:E52_Time-Span ;
+    rdfs:label "1871-10-18" ;
+    crm:P82_at_some_time_within "1871-10-18"^^xsd:date .
+
+ts:1872-11-29 a crm:E52_Time-Span ;
+    rdfs:label "1872-11-29" ;
+    crm:P82_at_some_time_within "1872-11-29"^^xsd:date .
+
+ts:1875-10-19 a crm:E52_Time-Span ;
+    rdfs:label "1875-10-19" ;
+    crm:P82_at_some_time_within "1875-10-19"^^xsd:date .
+
+ts:1893-12-29 a crm:E52_Time-Span ;
+    rdfs:label "1893-12-29" ;
+    crm:P82_at_some_time_within "1893-12-29"^^xsd:date .
+
+ts:1896-05-24 a crm:E52_Time-Span ;
+    rdfs:label "1896-05-24" ;
+    crm:P82_at_some_time_within "1896-05-24"^^xsd:date .
+
+type:Burial a crm:E55_Type ;
+    rdfs:label "Burial"@en .
+
+type:Collaboration a crm:E55_Type ;
+    rdfs:label "Collaboration"@en .
+
+type:Introduction a crm:E55_Type ;
+    rdfs:label "Introduction"@en .
+
+type:Translation a crm:E55_Type ;
+    rdfs:label "Translation"@en .
+
+work:note_g a frbroo:F2_Expression ;
+    rdfs:label "Note G"@en ;
+    dc:title "Note G"@en ;
+    crm:P129_is_about concept:bernoulli_numbers,
+        obj:analytical_engine ;
+    owl:sameAs <http://www.wikidata.org/entity/Q123509784> .
+
+person:dickens a crm:E21_Person ;
+    rdfs:label "Charles Dickens"@en ;
+    dc:description "novelist"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5686>,
+        <https://viaf.org/viaf/88666393/> .
+
+person:faraday a crm:E21_Person ;
+    rdfs:label "Michael Faraday"@en ;
+    dc:description "scientist"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8750>,
+        <https://viaf.org/viaf/38158158/> .
+
+person:king a crm:E21_Person ;
+    rdfs:label "William King-Noel 1st Earl of Lovelace"@en ;
+    dc:description "nobleman"@en,
+        "scientist"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4426480> .
+
+place:london a crm:E53_Place ;
+    rdfs:label "London"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q84>,
+        <https://www.geonames.org/2643743> .
+
+type:Tutoring a crm:E55_Type ;
+    rdfs:label "Tutoring"@en .
+
+work:menabrea_1842 a frbroo:F2_Expression ;
+    rdfs:label "Notions sur la machine analytique de M. Charles Babbage"@en ;
+    dc:date "1842-10" ;
+    dc:title "Notions sur la machine analytique de M. Charles Babbage"@en ;
+    dcterms:creator person:menabrea ;
+    dcterms:spatial "Geneva"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4903513> .
+
+work:notes_1843 a frbroo:F2_Expression ;
+    rdfs:label "Sketch of the Analytical Engine invented by Charles Babbage, Esq., with notes by the translator"@en ;
+    frbroo:R76_is_derivative_of work:menabrea_1842 ;
+    dc:date "1843-09" ;
+    dc:publisher "Richard and John E. Taylor"@en ;
+    dc:title "Sketch of the Analytical Engine invented by Charles Babbage, Esq., with notes by the translator"@en ;
+    dcterms:creator person:ada,
+        person:menabrea ;
+    dcterms:spatial "London"@en ;
+    dcterms:subject concept:computing,
+        concept:mathematics ;
+    crm:P129_is_about obj:analytical_engine ;
+    crm:P148_has_component work:note_g ;
+    owl:sameAs <http://www.wikidata.org/entity/Q139555665> .
+
+obj:analytical_engine a crm:E22_Human-Made_Object ;
+    rdfs:label "Analytical Engine"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q485257> .
+
+person:byron a crm:E21_Person ;
+    rdfs:label "George Gordon Byron 6th Baron Byron"@en ;
+    dc:description "poet"@en ;
+    owl:sameAs <http://viaf.org/viaf/95230688>,
+        <http://www.wikidata.org/entity/Q5679> .
+
+person:demorgan a crm:E21_Person ;
+    rdfs:label "Augustus De Morgan"@en ;
+    dc:description "logician"@en,
+        "mathematician"@en ;
+    owl:sameAs <http://viaf.org/viaf/29575875>,
+        <http://www.wikidata.org/entity/Q208448> .
+
+person:milbanke a crm:E21_Person ;
+    rdfs:label "Anne Isabella Milbanke Lady Byron"@en ;
+    owl:sameAs <http://viaf.org/viaf/67258879>,
+        <http://www.wikidata.org/entity/Q272161> .
+
+person:wheatstone a crm:E21_Person ;
+    rdfs:label "Charles Wheatstone"@en ;
+    dc:description "inventor"@en,
+        "scientist"@en ;
+    owl:sameAs <http://viaf.org/viaf/54231425>,
+        <http://www.wikidata.org/entity/Q156942> .
+
+concept:scheme a skos:ConceptScheme ;
+    dc:title "Ada Lovelace project subject scheme"@en .
+
+person:somerville a crm:E21_Person ;
+    rdfs:label "Mary Somerville"@en ;
+    dc:description "mathematician"@en,
+        "science writer"@en ;
+    owl:sameAs <http://viaf.org/viaf/27288356>,
+        <http://www.wikidata.org/entity/Q268702> .
+
+person:babbage a crm:E21_Person ;
+    rdfs:label "Charles Babbage"@en ;
+    dc:description "inventor"@en,
+        "mathematician"@en ;
+    owl:sameAs <http://viaf.org/viaf/4963723>,
+        <http://www.wikidata.org/entity/Q46633> .
+
+person:menabrea a crm:E21_Person ;
+    rdfs:label "Luigi Federico Menabrea"@en ;
+    dc:description "Prime Minister of Italy"@en,
+        "military engineer"@en ;
+    owl:sameAs <http://viaf.org/viaf/50029341>,
+        <http://www.wikidata.org/entity/Q548672> .
+
+person:ada a crm:E21_Person ;
+    rdfs:label "Augusta Ada King Countess of Lovelace"@en ;
+    dc:description "mathematician"@en,
+        "writer"@en ;
+    owl:sameAs <http://viaf.org/viaf/61632881>,
+        <http://www.wikidata.org/entity/Q7259> .
+

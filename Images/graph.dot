@@ -1,0 +1,504 @@
+digraph { 
+ node [ fontname="DejaVu Sans" ] ; 
+	node0 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node2 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node6 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node8 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node11 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node15 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node17 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node20 -> node21 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node22 -> node23 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node25 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node28 -> node29 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node27 -> node31 [ color=BLACK, label=< <font point-size='10' color='#336633'>frbroo:R17_created</font> > ] ;
+	node11 -> node32 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node33 -> node34 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node15 -> node35 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node37 -> node38 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node9 -> node41 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node43 -> node44 [ color=BLACK, label=< <font point-size='10' color='#336633'>frbroo:R17_created</font> > ] ;
+	node36 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node45 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node46 -> node47 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node49 -> node40 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node14 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node5 -> node24 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node44 -> node51 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node52 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P148_has_component</font> > ] ;
+	node56 -> node57 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node58 -> node19 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node8 -> node59 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node54 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node63 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node43 -> node64 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node65 -> node56 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P108_has_produced</font> > ] ;
+	node66 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node67 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node55 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node48 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node61 -> node68 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node69 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node70 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node34 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node28 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node72 -> node73 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P96_by_mother</font> > ] ;
+	node31 -> node74 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node76 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node75 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node20 -> node56 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P129_is_about</font> > ] ;
+	node43 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node33 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node72 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node25 -> node79 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node80 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node66 -> node81 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node62 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node82 -> node83 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node67 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node85 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node58 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node69 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node73 -> node86 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node4 -> node87 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node88 -> node80 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node36 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node56 -> node90 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node44 -> node55 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:subject</font> > ] ;
+	node65 -> node91 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node65 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node93 -> node94 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node95 -> node73 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node31 -> node96 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node97 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node77 -> node98 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node46 -> node99 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node24 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node100 -> node73 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node13 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node101 -> node102 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node103 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node104 -> node105 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node8 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node1 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node107 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node107 -> node108 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node43 -> node106 [ color=BLACK, label=< <font point-size='10' color='#336633'>frbroo:R18_created</font> > ] ;
+	node17 -> node78 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node44 -> node31 [ color=BLACK, label=< <font point-size='10' color='#336633'>frbroo:R76_is_derivative_of</font> > ] ;
+	node89 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node49 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node43 -> node109 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node72 -> node46 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P97_from_father</font> > ] ;
+	node52 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node4 -> node111 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node76 -> node112 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node113 -> node57 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node28 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node55 -> node114 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node115 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node73 -> node116 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node100 -> node117 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node42 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node118 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node27 -> node109 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node1 -> node119 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node37 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node96 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node92 -> node120 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node69 -> node29 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node104 -> node121 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node31 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node14 -> node122 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node55 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node28 -> node112 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node104 -> node120 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node88 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node23 -> node123 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node4 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node49 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node110 -> node120 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node0 -> node103 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node62 -> node23 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node71 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node79 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node54 -> node124 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node115 -> node46 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node20 -> node96 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node115 -> node2 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node110 -> node125 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node67 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node81 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node102 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node23 -> node126 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node107 -> node127 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node58 -> node92 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P7_took_place_at</font> > ] ;
+	node30 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node70 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node18 -> node128 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node18 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node10 -> node130 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node5 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node19 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node22 -> node42 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node11 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node78 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node110 -> node131 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node70 -> node84 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node67 -> node132 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node67 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node93 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node43 -> node63 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node58 -> node132 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node39 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node118 -> node75 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node72 -> node71 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node52 -> node85 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node129 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node72 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node0 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node64 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node17 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node101 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node38 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node88 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node66 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node95 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node129 -> node48 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node60 -> node44 [ color=BLACK, label=< <font point-size='10' color='#336633'>frbroo:R3_is_realised_in</font> > ] ;
+	node43 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node101 -> node26 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node73 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node27 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P14_carried_out_by</font> > ] ;
+	node84 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node20 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P129_is_about</font> > ] ;
+	node56 -> node133 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node14 -> node134 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node15 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node72 -> node110 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P7_took_place_at</font> > ] ;
+	node129 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node118 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node112 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node69 -> node45 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P2_has_type</font> > ] ;
+	node95 -> node39 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node10 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node77 -> node135 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node62 -> node97 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node54 -> node136 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node129 -> node110 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P7_took_place_at</font> > ] ;
+	node106 -> node137 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node23 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node33 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node8 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:subject</font> > ] ;
+	node44 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node94 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node100 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node113 -> node138 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node1 -> node139 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node67 -> node89 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node25 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node93 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node60 -> node140 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node82 -> node57 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node40 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node56 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P129_is_about</font> > ] ;
+	node5 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P98_brought_into_life</font> > ] ;
+	node37 -> node46 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P100_was_death_of</font> > ] ;
+	node117 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node22 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node76 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P11_had_participant</font> > ] ;
+	node76 -> node29 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node46 -> node50 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node30 [ color=BLACK, label=< <font point-size='10' color='#336633'>crm:P4_has_time-span</font> > ] ;
+	node10 -> node141 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+	node92 -> node142 [ color=BLACK, label=< <font point-size='10' color='#336633'>owl:sameAs</font> > ] ;
+# https://w3id.org/adalovelaceproject/event/faraday_death node0
+node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Michael Faraday</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/faraday_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/faraday_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/faraday node1
+node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Michael Faraday</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/faraday' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/faraday</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;scientist&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1788-01-22 node2
+node2 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1788-01-22</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1788-01-22' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1788-01-22</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1788-01-22&quot;^^xsd:date</td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span node3
+node3 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E52_Time-Span</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/babbage node4
+node4 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/babbage' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/babbage</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;inventor&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;mathematician&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/somerville_birth node5
+node5 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Mary Somerville</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/somerville_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/somerville_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/type/Introduction node6
+node6 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Introduction</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/type/Introduction' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/type/Introduction</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E55_Type node7
+node7 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E55_Type</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E55_Type' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E55_Type</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/concept/mathematics node8
+node8 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>mathematics</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/concept/mathematics' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/concept/mathematics</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Mathematics&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/concept/scheme node9
+node9 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Ada Lovelace project subject scheme</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/concept/scheme' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/concept/scheme</font></td></tr><tr><td align='left'>dc:title</td><td align='left'>&quot;Ada Lovelace project subject scheme&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/demorgan node10
+node10 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Augustus De Morgan</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/demorgan' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/demorgan</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;logician&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;mathematician&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/concept/bernoulli_numbers node11
+node11 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>bernoulli_numbers</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/concept/bernoulli_numbers' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/concept/bernoulli_numbers</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Bernoulli numbers&quot;@en</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#Concept node12
+node12 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Concept</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#Concept' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#Concept</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/somerville_death node13
+node13 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Mary Somerville</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/somerville_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/somerville_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/somerville node14
+node14 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Mary Somerville</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/somerville' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/somerville</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;mathematician&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;science writer&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/wheatstone node15
+node15 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Charles Wheatstone</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/wheatstone' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/wheatstone</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;inventor&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;scientist&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q156942 node16
+node16 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q156942</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q156942' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q156942</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/king_death node17
+node17 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of William King-Noel 1st Earl of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/king_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/king_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/king node18
+node18 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>William King-Noel 1st Earl of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/king' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/king</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;nobleman&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;scientist&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/type/Burial node19
+node19 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Burial</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/type/Burial' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/type/Burial</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/work/note_g node20
+node20 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Note G</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/work/note_g' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/work/note_g</font></td></tr><tr><td align='left'>dc:title</td><td align='left'>&quot;Note G&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q123509784 node21
+node21 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q123509784</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q123509784' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q123509784</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/dickens_death node22
+node22 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Charles Dickens</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/dickens_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/dickens_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/dickens node23
+node23 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Charles Dickens</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/dickens' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/dickens</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;novelist&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1780-12-26 node24
+node24 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1780-12-26</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1780-12-26' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1780-12-26</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1780-12-26&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/faraday_birth node25
+node25 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Michael Faraday</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/faraday_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/faraday_birth</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E67_Birth node26
+node26 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E67_Birth</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E67_Birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E67_Birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/menabrea_writing_1842 node27
+node27 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Writing of the 1842 French article by Luigi Menabrea</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/menabrea_writing_1842' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/menabrea_writing_1842</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/tutoring_by_demorgan node28
+node28 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Tutoring of Ada by demorgan</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/tutoring_by_demorgan' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/tutoring_by_demorgan</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E7_Activity node29
+node29 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E7_Activity</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E7_Activity' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E7_Activity</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1872-11-29 node30
+node30 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1872-11-29</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1872-11-29' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1872-11-29</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1872-11-29&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/work/menabrea_1842 node31
+node31 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Notions sur la machine analytique de M. Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/work/menabrea_1842' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/work/menabrea_1842</font></td></tr><tr><td align='left'>dc:date</td><td align='left'>&quot;1842-10&quot;</td></tr><tr><td align='left'>dc:title</td><td align='left'>&quot;Notions sur la machine analytique de M. Charles Babbage&quot;@en</td></tr><tr><td align='left'>dcterms:spatial</td><td align='left'>&quot;Geneva&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q1338141 node32
+node32 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q1338141</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q1338141' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q1338141</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/demorgan_death node33
+node33 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Augustus De Morgan</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/demorgan_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/demorgan_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1871-03-18 node34
+node34 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1871-03-18</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1871-03-18' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1871-03-18</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1871-03-18&quot;^^xsd:date</td></tr></table> > ] 
+# http://viaf.org/viaf/54231425 node35
+node35 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>54231425</B></td></tr><tr><td href='http://viaf.org/viaf/54231425' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/54231425</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/concept/poetical_science node36
+node36 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>poetical_science</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/concept/poetical_science' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/concept/poetical_science</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Poetical science&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/byron_death node37
+node37 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of George Gordon Byron 6th Baron Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/byron_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/byron_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1824-04-19 node38
+node38 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1824-04-19</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1824-04-19' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1824-04-19</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1824-04-19&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1792-05-17 node39
+node39 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1792-05-17</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1792-05-17' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1792-05-17</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1792-05-17&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1805-02-21 node40
+node40 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1805-02-21</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1805-02-21' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1805-02-21</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1805-02-21&quot;^^xsd:date</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme node41
+node41 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ConceptScheme</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#ConceptScheme' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#ConceptScheme</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1870-06-09 node42
+node42 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1870-06-09</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1870-06-09' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1870-06-09</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1870-06-09&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/translation_1842_1843 node43
+node43 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Translation of Menabrea and creation of the Notes (1842–43)</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/translation_1842_1843' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/translation_1842_1843</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/work/notes_1843 node44
+node44 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Sketch of the Analytical Engine invented by Charles Babbage, Esq., with notes by the translator</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/work/notes_1843' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/work/notes_1843</font></td></tr><tr><td align='left'>dc:date</td><td align='left'>&quot;1843-09&quot;</td></tr><tr><td align='left'>dc:publisher</td><td align='left'>&quot;Richard and John E. Taylor&quot;@en</td></tr><tr><td align='left'>dc:title</td><td align='left'>&quot;Sketch of the Analytical Engine invented by Charles Babbage, Esq., with notes by the translator&quot;@en</td></tr><tr><td align='left'>dcterms:spatial</td><td align='left'>&quot;London&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/type/Collaboration node45
+node45 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Collaboration</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/type/Collaboration' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/type/Collaboration</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/byron node46
+node46 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>George Gordon Byron 6th Baron Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/byron' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/byron</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;poet&quot;@en</td></tr></table> > ] 
+# http://viaf.org/viaf/95230688 node47
+node47 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>95230688</B></td></tr><tr><td href='http://viaf.org/viaf/95230688' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/95230688</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1852-11-27 node48
+node48 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1852-11-27</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1852-11-27' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1852-11-27</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1852-11-27&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/king_birth node49
+node49 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of William King-Noel 1st Earl of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/king_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/king_birth</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E21_Person node50
+node50 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E21_Person</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E21_Person' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E21_Person</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q139555665 node51
+node51 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q139555665</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q139555665' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q139555665</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/babbage_death node52
+node52 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/babbage_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/babbage_death</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E69_Death node53
+node53 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E69_Death</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E69_Death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E69_Death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/ada node54
+node54 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Augusta Ada King Countess of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/ada' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/ada</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;mathematician&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;writer&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/concept/computing node55
+node55 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>computing</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/concept/computing' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/concept/computing</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Computing&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/object/analytical_engine node56
+node56 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Analytical Engine</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/object/analytical_engine' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/object/analytical_engine</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object node57
+node57 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E22_Human-Made_Object</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/ada_burial node58
+node58 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Burial of Ada Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/ada_burial' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/ada_burial</font></td></tr></table> > ] 
+# http://id.loc.gov/authorities/subjects/sh85082139 node59
+node59 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>sh85082139</B></td></tr><tr><td href='http://id.loc.gov/authorities/subjects/sh85082139' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://id.loc.gov/authorities/subjects/sh85082139</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/work/notes_work node60
+node60 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>The Notes (work)</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/work/notes_work' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/work/notes_work</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/dataset node61
+node61 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Ada Lovelace LODLAM project — RDF dataset</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/dataset' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/dataset</font></td></tr><tr><td align='left'>dc:creator</td><td align='left'>&quot;Mr. Tuco&quot;@en</td></tr><tr><td align='left'>dc:date</td><td align='left'>&quot;2026&quot;^^xsd:gYear</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;RDF dataset derived from the TEI-encoded Wikipedia article on Ada Lovelace, following a CIDOC-CRM + FRBRoo + SKOS + DC + OWL model.&quot;@en</td></tr><tr><td align='left'>dc:title</td><td align='left'>&quot;Ada Lovelace LODLAM project — RDF dataset&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/dickens_birth node62
+node62 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Charles Dickens</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/dickens_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/dickens_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/type/Translation node63
+node63 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Translation</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/type/Translation' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/type/Translation</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1842_1843 node64
+node64 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1842–1843</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1842_1843' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1842_1843</font></td></tr><tr><td align='left'>crm:P82a_begin_of_the_begin</td><td align='left'>&quot;1842-01-01&quot;^^xsd:date</td></tr><tr><td align='left'>crm:P82b_end_of_the_end</td><td align='left'>&quot;1843-12-31&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/analytical_engine_design node65
+node65 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Design of the Analytical Engine by Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/analytical_engine_design' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/analytical_engine_design</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/wheatstone_death node66
+node66 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Charles Wheatstone</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/wheatstone_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/wheatstone_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/introduction_1833 node67
+node67 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Introduction of Ada to Babbage by Mary Somerville</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/introduction_1833' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/introduction_1833</font></td></tr></table> > ] 
+# http://www.w3.org/2002/07/owl#Ontology node68
+node68 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Ontology</B></td></tr><tr><td href='http://www.w3.org/2002/07/owl#Ontology' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2002/07/owl#Ontology</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/collaboration_ada_babbage node69
+node69 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Collaboration between Ada Lovelace and Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/collaboration_ada_babbage' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/collaboration_ada_babbage</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/wheatstone_birth node70
+node70 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Charles Wheatstone</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/wheatstone_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/wheatstone_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1815-12-10 node71
+node71 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1815-12-10</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1815-12-10' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1815-12-10</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1815-12-10&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/ada_birth node72
+node72 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Augusta Ada King Countess of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/ada_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/ada_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/milbanke node73
+node73 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Anne Isabella Milbanke Lady Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/milbanke' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/milbanke</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q4903513 node74
+node74 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q4903513</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q4903513' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q4903513</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1896-05-24 node75
+node75 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1896-05-24</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1896-05-24' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1896-05-24</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1896-05-24&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/tutoring_by_somerville node76
+node76 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Tutoring of Ada by somerville</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/tutoring_by_somerville' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/tutoring_by_somerville</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/org/uni_turin node77
+node77 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>University of Turin</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/org/uni_turin' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/org/uni_turin</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1893-12-29 node78
+node78 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1893-12-29</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1893-12-29' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1893-12-29</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1893-12-29&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1791-09-22 node79
+node79 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1791-09-22</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1791-09-22' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1791-09-22</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1791-09-22&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1809-09-04 node80
+node80 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1809-09-04</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1809-09-04' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1809-09-04</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1809-09-04&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1875-10-19 node81
+node81 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1875-10-19</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1875-10-19' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1875-10-19</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1875-10-19&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/object/ada_language node82
+node82 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Ada (programming language)</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/object/ada_language' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/object/ada_language</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q154755 node83
+node83 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q154755</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q154755' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q154755</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1802-02-06 node84
+node84 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1802-02-06</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1802-02-06' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1802-02-06</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1802-02-06&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1871-10-18 node85
+node85 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1871-10-18</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1871-10-18' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1871-10-18</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1871-10-18&quot;^^xsd:date</td></tr></table> > ] 
+# http://viaf.org/viaf/67258879 node86
+node86 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>67258879</B></td></tr><tr><td href='http://viaf.org/viaf/67258879' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/67258879</font></td></tr></table> > ] 
+# http://viaf.org/viaf/4963723 node87
+node87 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>4963723</B></td></tr><tr><td href='http://viaf.org/viaf/4963723' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/4963723</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/menabrea_birth node88
+node88 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Luigi Federico Menabrea</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/menabrea_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/menabrea_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1833-06-05 node89
+node89 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1833-06-05</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1833-06-05' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1833-06-05</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1833-06-05&quot;^^xsd:date</td></tr></table> > ] 
+# https://id.loc.gov/resources/instances/16060745.html node90
+node90 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>16060745.html</B></td></tr><tr><td href='https://id.loc.gov/resources/instances/16060745.html' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://id.loc.gov/resources/instances/16060745.html</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E12_Production node91
+node91 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E12_Production</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E12_Production' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E12_Production</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/place/hucknall_church node92
+node92 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Church of St Mary Magdalene</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/place/hucknall_church' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/place/hucknall_church</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/babbage_birth node93
+node93 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Charles Babbage</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/babbage_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/babbage_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1791-12-26 node94
+node94 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1791-12-26</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1791-12-26' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1791-12-26</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1791-12-26&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/milbanke_birth node95
+node95 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Anne Isabella Milbanke Lady Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/milbanke_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/milbanke_birth</font></td></tr></table> > ] 
+# http://erlangen-crm.org/efrbroo/F2_Expression node96
+node96 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>F2_Expression</B></td></tr><tr><td href='http://erlangen-crm.org/efrbroo/F2_Expression' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://erlangen-crm.org/efrbroo/F2_Expression</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1812-02-07 node97
+node97 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1812-02-07</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1812-02-07' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1812-02-07</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1812-02-07&quot;^^xsd:date</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q499911 node98
+node98 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q499911</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q499911' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q499911</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q5679 node99
+node99 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q5679</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q5679' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q5679</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/milbanke_death node100
+node100 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Anne Isabella Milbanke Lady Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/milbanke_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/milbanke_death</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/demorgan_birth node101
+node101 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of Augustus De Morgan</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/demorgan_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/demorgan_birth</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1806-06-27 node102
+node102 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1806-06-27</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1806-06-27' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1806-06-27</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1806-06-27&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1867-08-25 node103
+node103 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1867-08-25</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1867-08-25' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1867-08-25</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1867-08-25&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/place/turin node104
+node104 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Turin</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/place/turin' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/place/turin</font></td></tr></table> > ] 
+# https://www.geonames.org/3165524 node105
+node105 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>3165524</B></td></tr><tr><td href='https://www.geonames.org/3165524' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://www.geonames.org/3165524</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/manifestation/notes_1843_taylor node106
+node106 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>The Notes in Taylor&#x27;s Scientific Memoirs, vol. 3 (1843)</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/manifestation/notes_1843_taylor' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/manifestation/notes_1843_taylor</font></td></tr><tr><td align='left'>dc:date</td><td align='left'>&quot;1843&quot;^^xsd:gYear</td></tr><tr><td align='left'>dc:publisher</td><td align='left'>&quot;Richard and John E. Taylor&quot;@en</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/person/menabrea node107
+node107 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Luigi Federico Menabrea</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/person/menabrea' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/person/menabrea</font></td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;Prime Minister of Italy&quot;@en</td></tr><tr><td align='left'>dc:description</td><td align='left'>&quot;military engineer&quot;@en</td></tr></table> > ] 
+# https://viaf.org/viaf/41878961/ node108
+node108 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>https://viaf.org/viaf/41878961/</B></td></tr><tr><td href='https://viaf.org/viaf/41878961/' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://viaf.org/viaf/41878961/</font></td></tr></table> > ] 
+# http://erlangen-crm.org/efrbroo/F28_Expression_Creation node109
+node109 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>F28_Expression_Creation</B></td></tr><tr><td href='http://erlangen-crm.org/efrbroo/F28_Expression_Creation' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://erlangen-crm.org/efrbroo/F28_Expression_Creation</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/place/london node110
+node110 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>London</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/place/london' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/place/london</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q46633 node111
+node111 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q46633</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q46633' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q46633</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/type/Tutoring node112
+node112 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Tutoring</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/type/Tutoring' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/type/Tutoring</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/object/difference_engine node113
+node113 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Difference Engine</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/object/difference_engine' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/object/difference_engine</font></td></tr></table> > ] 
+# http://id.loc.gov/authorities/subjects/sh85029552 node114
+node114 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>sh85029552</B></td></tr><tr><td href='http://id.loc.gov/authorities/subjects/sh85029552' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://id.loc.gov/authorities/subjects/sh85029552</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/byron_birth node115
+node115 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Birth of George Gordon Byron 6th Baron Byron</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/byron_birth' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/byron_birth</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q252761 node116
+node116 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q252761</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q252761' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q252761</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/timespan/1860-05-16 node117
+node117 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>1860-05-16</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/timespan/1860-05-16' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/timespan/1860-05-16</font></td></tr><tr><td align='left'>crm:P82_at_some_time_within</td><td align='left'>&quot;1860-05-16&quot;^^xsd:date</td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/menabrea_death node118
+node118 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Luigi Federico Menabrea</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/menabrea_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/menabrea_death</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q8750 node119
+node119 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q8750</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q8750' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q8750</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E53_Place node120
+node120 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E53_Place</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E53_Place' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E53_Place</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q495 node121
+node121 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q495</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q495' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q495</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q268702 node122
+node122 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q268702</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q268702' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q268702</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q5686 node123
+node123 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q5686</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q5686' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q5686</font></td></tr></table> > ] 
+# http://viaf.org/viaf/61632881 node124
+node124 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>61632881</B></td></tr><tr><td href='http://viaf.org/viaf/61632881' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/61632881</font></td></tr></table> > ] 
+# https://www.geonames.org/2643743 node125
+node125 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>2643743</B></td></tr><tr><td href='https://www.geonames.org/2643743' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://www.geonames.org/2643743</font></td></tr></table> > ] 
+# https://viaf.org/viaf/88666393/ node126
+node126 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>https://viaf.org/viaf/88666393/</B></td></tr><tr><td href='https://viaf.org/viaf/88666393/' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://viaf.org/viaf/88666393/</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q548672 node127
+node127 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q548672</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q548672' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q548672</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q4426480 node128
+node128 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q4426480</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q4426480' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q4426480</font></td></tr></table> > ] 
+# https://w3id.org/adalovelaceproject/event/ada_death node129
+node129 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Death of Augusta Ada King Countess of Lovelace</B></td></tr><tr><td href='https://w3id.org/adalovelaceproject/event/ada_death' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/adalovelaceproject/event/ada_death</font></td></tr></table> > ] 
+# http://viaf.org/viaf/29575875 node130
+node130 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>29575875</B></td></tr><tr><td href='http://viaf.org/viaf/29575875' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/29575875</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q84 node131
+node131 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q84</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q84' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q84</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E5_Event node132
+node132 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E5_Event</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E5_Event' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E5_Event</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q485257 node133
+node133 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q485257</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q485257' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q485257</font></td></tr></table> > ] 
+# http://viaf.org/viaf/27288356 node134
+node134 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>27288356</B></td></tr><tr><td href='http://viaf.org/viaf/27288356' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://viaf.org/viaf/27288356</font></td></tr></table> > ] 
+# http://www.cidoc-crm.org/cidoc-crm/E74_Group node135
+node135 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>E74_Group</B></td></tr><tr><td href='http://www.cidoc-crm.org/cidoc-crm/E74_Group' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.cidoc-crm.org/cidoc-crm/E74_Group</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q7259 node136
+node136 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q7259</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q7259' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q7259</font></td></tr></table> > ] 
+# http://erlangen-crm.org/efrbroo/F4_Manifestation_Singleton node137
+node137 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>F4_Manifestation_Singleton</B></td></tr><tr><td href='http://erlangen-crm.org/efrbroo/F4_Manifestation_Singleton' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://erlangen-crm.org/efrbroo/F4_Manifestation_Singleton</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q628007 node138
+node138 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q628007</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q628007' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q628007</font></td></tr></table> > ] 
+# https://viaf.org/viaf/38158158/ node139
+node139 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>https://viaf.org/viaf/38158158/</B></td></tr><tr><td href='https://viaf.org/viaf/38158158/' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://viaf.org/viaf/38158158/</font></td></tr></table> > ] 
+# http://erlangen-crm.org/efrbroo/F1_Work node140
+node140 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>F1_Work</B></td></tr><tr><td href='http://erlangen-crm.org/efrbroo/F1_Work' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://erlangen-crm.org/efrbroo/F1_Work</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q208448 node141
+node141 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q208448</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q208448' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q208448</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q5117286 node142
+node142 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q5117286</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q5117286' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q5117286</font></td></tr></table> > ] 
+}

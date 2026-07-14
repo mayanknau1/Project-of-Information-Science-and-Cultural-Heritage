@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Ada Lovelace — TEI encoding of the English Wikipedia page</title>
+        <author xml:id="author">
+          <persName>Mr. Mayank Nautiyal</persName>
+          <affiliation>Master in Digital Humanities and Digital Knowledge, Course: Information Science and Cultural Heritage , a.y. 2025–2026</affiliation>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>LODLAM PROJECT</publisher>
+        <date when="2026">2026</date>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 (inherited from Wikipedia)</licence>
+        </availability>
+        <idno type="project">https://w3id.org/adalovelaceproject/tei/01</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Ada Lovelace</title>
+          <publisher>Wikipedia, the Free Encyclopedia</publisher>
+          <ref target="https://en.wikipedia.org/wiki/Ada_Lovelace">https://en.wikipedia.org/wiki/Ada_Lovelace</ref>
+          <date when="2026-07-03">consulted 3 July 2026</date>
+        </bibl>
+
+        <!-- listPerson (11) -->
+        <listPerson>
+          <person xml:id="ada">
+            <persName type="main">
+              <forename>Augusta</forename>
+              <forename>Ada</forename>
+              <surname>King</surname>
+              <roleName>Countess of Lovelace</roleName>
+            </persName>
+            <persName type="variant">Ada Lovelace</persName>
+            <persName type="birth">Augusta Ada Byron</persName>
+            <birth when="1815-12-10"><placeName ref="#london">London</placeName></birth>
+            <death when="1852-11-27"><placeName ref="#london">London</placeName></death>
+            <occupation>mathematician</occupation>
+            <occupation>writer</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/61632881</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q7259</idno>
+          </person>
+
+          <person xml:id="babbage">
+            <persName type="main">
+            <forename>Charles</forename>
+            <surname>Babbage</surname>
+            </persName>
+            <birth when="1791-12-26"/>
+            <death when="1871-10-18"/>
+            <occupation>mathematician</occupation>
+            <occupation>inventor</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/4963723</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q46633</idno>
+          </person>
+
+          <person xml:id="byron">
+            <persName type="main">
+              <forename>George Gordon</forename>
+              <surname>Byron</surname>
+              <roleName>6th Baron Byron</roleName>
+            </persName>
+            <persName type="variant">Lord Byron</persName>
+            <birth when="1788-01-22"/>
+            <death when="1824-04-19"/>
+            <occupation>poet</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/95230688</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q5679</idno>
+          </person>
+
+          <person xml:id="milbanke">
+            <persName type="main">
+              <forename>Anne Isabella</forename>
+              <surname>Milbanke</surname>
+              <roleName>Lady Byron</roleName>
+            </persName>
+            <birth when="1792-05-17"/>
+            <death when="1860-05-16"/>
+            <idno type="VIAF">http://viaf.org/viaf/67258879</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q272161</idno>
+          </person>
+
+          <person xml:id="king">
+            <persName type="main">
+              <forename>William</forename>
+              <surname>King-Noel</surname>
+              <roleName>1st Earl of Lovelace</roleName>
+            </persName>
+            <birth when="1805-02-21"/>
+            <death when="1893-12-29"/>
+            <occupation>nobleman</occupation>
+            <occupation>scientist</occupation>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q4426480</idno>
+          </person>
+
+          <person xml:id="somerville">
+            <persName type="main">
+            <forename>Mary</forename>
+            <surname>Somerville</surname>
+            </persName>
+            <birth when="1780-12-26"/>
+            <death when="1872-11-29"/>
+            <occupation>mathematician</occupation>
+            <occupation>science writer</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/27288356</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q268702</idno>
+          </person>
+
+          <person xml:id="menabrea">
+            <persName type="main">
+            <forename>Luigi</forename>
+            <forename>Federico</forename>
+            <surname>Menabrea</surname>
+            </persName>
+            <birth when="1809-09-04"/>
+            <death when="1896-05-24"/>
+            <occupation>military engineer</occupation>
+            <occupation>Prime Minister of Italy</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/50029341</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q548672</idno>
+          </person>
+
+          <person xml:id="demorgan">
+            <persName type="main">
+            <forename>Augustus</forename>
+            <surname>De Morgan</surname>
+            </persName>
+            <birth when="1806-06-27"/>
+            <death when="1871-03-18"/>
+            <occupation>mathematician</occupation>
+            <occupation>logician</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/29575875</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q208448</idno>
+          </person>
+
+          <person xml:id="wheatstone">
+            <persName type="main">
+            <forename>Charles</forename>
+            <surname>Wheatstone</surname>
+            </persName>
+            <birth when="1802-02-06"/>
+            <death when="1875-10-19"/>
+            <occupation>scientist</occupation>
+            <occupation>inventor</occupation>
+            <idno type="VIAF">http://viaf.org/viaf/54231425</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q156942</idno>
+          </person>
+
+          <person xml:id="faraday">
+            <persName type="main">
+            <forename>Michael</forename>
+            <surname>Faraday</surname>
+            </persName>
+            <birth when="1791-09-22"/>
+            <death when="1867-08-25"/>
+            <occupation>scientist</occupation>
+            <idno type="VIAF">https://viaf.org/viaf/38158158/</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q8750</idno>
+          </person>
+
+          <person xml:id="dickens">
+            <persName type="main">
+            <forename>Charles</forename>
+            <surname>Dickens</surname>
+            </persName>
+            <birth when="1812-02-07"/>
+            <death when="1870-06-09"/>
+            <occupation>novelist</occupation>
+            <idno type="VIAF">https://viaf.org/viaf/88666393/</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q5686</idno>
+          </person>
+        </listPerson>
+
+        <!--  listPlace (3)  -->
+        <listPlace>
+          <place xml:id="london">
+            <placeName>London</placeName>
+            <country>England</country>
+            <location><geo>51.5074 -0.1278</geo></location>
+            <idno type="GeoNames">https://www.geonames.org/2643743</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q84</idno>
+          </place>
+          <place xml:id="hucknall_church">
+            <placeName>Church of St Mary Magdalene</placeName>
+            <settlement>Hucknall</settlement>
+            <region>Nottinghamshire</region>
+            <country>England</country>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q5117286</idno>
+          </place>
+          <place xml:id="turin">
+            <placeName>Turin</placeName>
+            <country>Italy</country>
+            <location><geo>45.0703 7.6869</geo></location>
+            <idno type="GeoNames">https://www.geonames.org/3165524</idno>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q495</idno>
+          </place>
+        </listPlace>
+
+        <!-- listOrg (1)-->
+        <listOrg>
+          <org xml:id="uni_turin">
+            <orgName>University of Turin</orgName>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q499911</idno>
+          </org>
+        </listOrg>
+
+        <!--  listObject (3)  -->
+        <listObject>
+          <object xml:id="analytical_engine" type="designed_machine">
+            <objectIdentifier>
+              <objectName>Analytical Engine</objectName>
+            </objectIdentifier>
+            <p>Babbage's proposed mechanical general-purpose computer; the subject of Ada's Notes. Designed but never built.</p>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q485257</idno>
+          </object>
+          <object xml:id="difference_engine" type="designed_machine">
+            <objectIdentifier>
+              <objectName>Difference Engine</objectName>
+            </objectIdentifier>
+            <p>Babbage's earlier automatic mechanical calculator. Ada saw the working prototype in June 1833.</p>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q628007</idno>
+          </object>
+          <!--  Legacy -->
+          <object xml:id="ada_language" type="programming_language">
+            <objectIdentifier>
+              <objectName>Ada (programming language)</objectName>
+            </objectIdentifier>
+            <p>A programming language created for the United States Department of Defense and named after Ada Lovelace in 1980.</p>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q154755</idno>
+          </object>
+        </listObject>
+
+        <!-- listBibl (3) -->
+        <listBibl>
+          <bibl xml:id="notes_1843">
+            <author corresp="#ada">Ada Lovelace</author>
+            <author corresp="#menabrea">Luigi Menabrea</author>
+            <title type="main">Sketch of the Analytical Engine invented by Charles Babbage, Esq., with notes by the translator</title>
+            <publisher>Richard and John E. Taylor</publisher>
+            <pubPlace>London</pubPlace>
+            <date when="1843-09">September 1843</date>
+            <biblScope unit="series">Scientific Memoirs</biblScope>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="page">666–731</biblScope>
+            <ref target="https://en.wikisource.org/wiki/Scientific_Memoirs/3/Sketch_of_the_Analytical_Engine_invented_by_Charles_Babbage,_Esq./Notes_by_the_Translator">Wikisource</ref>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q139555665</idno>
+          </bibl>
+          <bibl xml:id="menabrea_1842">
+            <author corresp="#menabrea">Luigi Menabrea</author>
+            <title>Notions sur la machine analytique de M. Charles Babbage</title>
+            <pubPlace>Geneva</pubPlace>
+            <title level="j">Bibliothèque universelle de Genève</title>
+            <date when="1842-10">October 1842</date>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q4903513</idno>
+          </bibl>
+          <bibl xml:id="note_g">
+            <title>Note G</title>
+            <note>The seventh and final note appended to <ref target="#notes_1843">Lovelace's 1843 translation of Menabrea</ref>. Describes a method for calculating Bernoulli numbers on the Analytical Engine; often called the first published computer program.</note>
+            <idno type="Wikidata">http://www.wikidata.org/entity/Q123509784</idno>
+          </bibl>
+        </listBibl>
+
+        <!-- listRelation -->
+        <listRelation>
+          <relation name="parent" active="#byron #milbanke" passive="#ada"/>
+          <relation name="spouse" mutual="#ada #king"/>
+          <relation name="tutor" active="#somerville #demorgan" passive="#ada"/>
+          <relation name="collaborator" mutual="#ada #babbage"/>
+          <relation name="introduced" active="#somerville" passive="#ada #babbage"/>
+          <relation name="acquaintance" mutual="#ada #faraday #dickens"/>
+          <relation name="commissioner" active="#wheatstone" passive="#ada"/>
+        </listRelation>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>This file is a TEI/XML transcription of selected paragraphs of the English Wikipedia article <hi rend="italic">Ada Lovelace</hi>, produced as part of the LODLAM project for the <hi rend="italic">Information Science and Cultural Heritage</hi> course (a.y. 2025–2026). All entities mentioned are annotated with TEI elements (<gi>persName</gi>, <gi>placeName</gi>, <gi>orgName</gi>, <gi>objectName</gi>, <gi>bibl</gi>, <gi>title</gi>, <gi>term</gi>, <gi>date</gi>, <gi>quote</gi>) and reconciled to external authority files (VIAF, Wikidata, GeoNames, LCSH).</p>
+      </projectDesc>
+      <classDecl>
+        <taxonomy xml:id="subjects">
+          <category xml:id="comp"><catDesc>Computing</catDesc></category>
+          <category xml:id="math"><catDesc>Mathematics</catDesc></category>
+          <category xml:id="ps"><catDesc>Poetical science</catDesc></category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <textClass>
+        <catRef scheme="#subjects" target="#comp #math"/>
+      </textClass>
+    </profileDesc>
+
+    
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="article" xml:id="article">
+
+        <head>Ada Lovelace</head>
+
+        <!--  1 LEAD -->
+        <div type="section" xml:id="lead">
+          <p>
+            <persName ref="#ada">Augusta Ada King, Countess of Lovelace</persName>
+            (née Byron;
+            <date when="1815-12-10">10 December 1815</date> –
+            <date when="1852-11-27">27 November 1852</date>), also known as 
+            <persName ref="#ada">Ada Lovelace</persName>, was an English 
+            <term ref="#math">mathematician</term> and writer chiefly known for work on
+            <persName ref="#babbage">Charles Babbage</persName>'s proposed mechanical general-purpose
+            <term ref="#comp">computer</term>, the
+            <objectName ref="#analytical_engine">Analytical Engine</objectName>.
+            She was the first to recognise the machine had applications beyond pure calculation.
+            <persName ref="#ada">Lovelace</persName> is often considered the first
+            <term ref="#comp">computer programmer</term>.
+          </p>
+        </div>
+
+        <!-- 2 PARENTAGE -->
+        <div type="section" xml:id="parentage">
+          <head>Parentage and early life</head>
+          <p>
+            <persName ref="#ada">Lovelace</persName> was the only legitimate child of
+            poet <persName ref="#byron">Lord Byron</persName> and
+            reformer <persName ref="#milbanke">Anne Isabella Milbanke</persName>.
+            <persName ref="#byron">Lord Byron</persName> separated from his wife a month after
+            <persName ref="#ada">Ada</persName> was born, and died when she was eight.
+            Her mother promoted <persName ref="#ada">Ada</persName>'s interest in
+            <term ref="#math">mathematics</term> and logic, in an effort to prevent her from
+            developing her father's perceived insanity.
+            <persName ref="#ada">Ada</persName> herself described her approach as
+            <quote source="https://en.wikipedia.org/wiki/Ada_Lovelace"><term ref="#ps">"poetical science"</term></quote>.
+          </p>
+        </div>
+
+        <!-- 3 EDUCATION -->
+        <div type="section" xml:id="education">
+          <head>Education</head>
+          <p>
+            From 1832, when she was seventeen, her mathematical abilities began to emerge.
+            Her educators included <persName ref="#somerville">Mary Somerville</persName>,
+            the noted Scottish astronomer and mathematician, and, from 1840, the mathematician and logician
+            <persName ref="#demorgan">Augustus De Morgan</persName>, who extended her
+            <quote source="https://en.wikipedia.org/wiki/Ada_Lovelace">much help in her mathematical studies</quote>,
+            including study of advanced calculus topics and the
+            <term ref="http://www.wikidata.org/entity/Q694114">numbers of Bernoulli</term>.
+          </p>
+        </div>
+
+        <!-- 4 MEETING BABBAGE -->
+        <div type="section" xml:id="meeting-babbage">
+          <head>Meeting Charles Babbage</head>
+          <p>
+            <persName ref="#ada">Lovelace</persName> first met
+            <persName ref="#babbage">Charles Babbage</persName> on
+            <date when="1833-06-05">5 June 1833</date>,
+            when she and her mother attended one of his Saturday night soirées
+            with their mutual friend, and <persName ref="#ada">Lovelace</persName>'s private tutor,
+            <persName ref="#somerville">Mary Somerville</persName>.
+            Later that month <persName ref="#babbage">Babbage</persName> invited
+            <persName ref="#ada">Lovelace</persName> to see the prototype of his
+            <objectName ref="#difference_engine">Difference Engine</objectName>;
+            she became fascinated with the machine.
+            Her mathematical talents led her to a long working relationship and friendship with
+            <persName ref="#babbage">Babbage</persName>, and she was particularly interested in his work
+            on the <objectName ref="#analytical_engine">Analytical Engine</objectName>.
+          </p>
+        </div>
+
+        <!-- 5 MARRIAGE -->
+        <div type="section" xml:id="marriage">
+          <head>Marriage</head>
+          <p>
+            On <date when="1835-07-08">8 July 1835</date>,
+            <persName ref="#ada">Ada</persName> married
+            <persName ref="#king">William, 8th Baron King</persName>, becoming Lady King.
+            In <date when="1838">1838</date> her husband was made
+            <persName ref="#king">Earl of Lovelace</persName>,
+            and she thereby became Countess of Lovelace.
+          </p>
+        </div>
+
+        <!-- 6 SOCIAL CIRCLE -->
+        <div type="section" xml:id="social-circle">
+          <head>Social circle</head>
+          <p>
+            <persName ref="#ada">Lovelace</persName> moved in distinguished scientific and literary circles:
+            her acquaintances included the scientist
+            <persName ref="#faraday">Michael Faraday</persName> and the author
+            <persName ref="#dickens">Charles Dickens</persName>.
+          </p>
+        </div>
+
+        <!-- 7 TRANSLATION -->
+        <div type="section" xml:id="translation">
+          <head>The Menabrea translation and the Notes</head>
+          <p>
+            In <date when="1840">1840</date>,
+            <persName ref="#babbage">Babbage</persName> was invited to give a seminar at the
+            <orgName ref="#uni_turin">University of Turin</orgName> in
+            <placeName ref="#turin">Turin</placeName> about his
+            <objectName ref="#analytical_engine">Analytical Engine</objectName>.
+            <persName ref="#menabrea">Luigi Menabrea</persName>, a young Italian engineer and the future
+            Prime Minister of Italy, transcribed <persName ref="#babbage">Babbage</persName>'s lecture into French
+            (<bibl ref="#menabrea_1842"><title>Notions sur la machine analytique de M. Charles Babbage</title>, <date when="1842">1842</date></bibl>).
+            <persName ref="#babbage">Babbage</persName>'s friend
+            <persName ref="#wheatstone">Charles Wheatstone</persName> commissioned
+            <persName ref="#ada">Lovelace</persName> to translate
+            <persName ref="#menabrea">Menabrea</persName>'s paper into English.
+          </p>
+          <p>
+            During a nine-month period in
+            <date from="1842" to="1843">1842–43</date>,
+            <persName ref="#ada">Lovelace</persName> translated
+            <persName ref="#menabrea">Menabrea</persName>'s article.
+            She augmented the paper with seven notes, A to G, about three times longer than the translation.
+            The translation and notes were then published in the
+            <date when="1843-09">September 1843</date> edition of
+            <bibl ref="#notes_1843">Taylor's <title level="j">Scientific Memoirs</title></bibl>
+            under her initials AAL.
+          </p>
+        </div>
+
+        <!-- 8 NOTE G -->
+        <div type="section" xml:id="note-g">
+          <head>Note G and the first algorithm</head>
+          <p>
+            The notes are important in the early history of <term ref="#comp">computers</term>,
+            especially since <bibl ref="#note_g"><title>Note G</title></bibl> described, in complete detail,
+            a method for calculating a sequence of
+            <term ref="http://www.wikidata.org/entity/Q694114">Bernoulli numbers</term>
+            using the <objectName ref="#analytical_engine">Analytical Engine</objectName>,
+            which might have run correctly had it ever been built.
+            Based on this work, <persName ref="#ada">Lovelace</persName> is now widely considered
+            the first <term ref="#comp">computer programmer</term>, and her method has been called
+            the world's first published <term ref="#comp">computer program</term>.
+          </p>
+        </div>
+
+        <!-- 9 DEATH AND BURIAL -->
+        <div type="section" xml:id="death">
+          <head>Death and burial</head>
+          <p>
+            <persName ref="#ada">Lovelace</persName> died at the age of 36 on
+            <date when="1852-11-27">27 November 1852</date>
+            from cervical cancer at her home in
+            <placeName ref="#london">London</placeName>. In 
+            <date when="1852-08">August 1852</date>, during her final illness,
+            <persName ref="#dickens">Charles Dickens</persName> visited her at her request and read to her
+            a scene from his novel <title>Dombey and Son</title>.
+            She was buried, at her request, next to her father at the
+            <placeName ref="#hucknall_church">Church of St Mary Magdalene</placeName> in Hucknall,
+            Nottinghamshire.
+          </p>
+        </div>
+
+        <!-- 10 LEGACY -->
+        <div type="section" xml:id="legacy">
+          <head>Legacy</head>
+          <p>
+            <persName ref="#ada">Lovelace</persName>'s work has been celebrated as a foundation of
+            <term ref="#comp">computer science</term>. In <date when="1980">1980</date>,
+            the United States Department of Defense named a newly developed
+            <term ref="#comp">programming language</term>
+            <objectName ref="#ada_language">Ada</objectName> after her.
+          </p>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>

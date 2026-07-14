@@ -1,0 +1,67 @@
+@prefix :        <https://w3id.org/adalovelaceproject/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix crm:     <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo:  <http://erlangen-crm.org/efrbroo/> .
+
+<https://w3id.org/adalovelaceproject/ontology> a owl:Ontology ;
+    dc:title       "Ada Lovelace LODLAM project ontology"@en ;
+    dc:creator     "Mr. Tuco"@en ;
+    dc:date        "2026"^^xsd:gYear ;
+    dc:description "A reuse-based conceptual model built on CIDOC-CRM and FRBRoo, with SKOS for subjects, Dublin Core for basic metadata, and OWL for authority-file alignment."@en ;
+    owl:imports    <http://www.cidoc-crm.org/cidoc-crm/> ,
+                   <http://erlangen-crm.org/efrbroo/> ,
+                   <http://www.w3.org/2004/02/skos/core> ;
+    rdfs:comment   "No new classes or properties are defined — all modelling reuses CIDOC-CRM, FRBRoo, SKOS, and Dublin Core."@en .
+
+
+:type_Tutoring       a crm:E55_Type ;
+    rdfs:label "Tutoring"@en ;
+    skos:definition "A teaching activity in which a tutor instructs a student."@en .
+
+:type_Collaboration  a crm:E55_Type ;
+    rdfs:label "Collaboration"@en ;
+    skos:definition "An activity carried out jointly by two or more persons."@en .
+
+:type_Burial         a crm:E55_Type ;
+    rdfs:label "Burial"@en ;
+    skos:definition "A funerary event in which a person's remains are interred at a specific place."@en .
+
+:type_Introduction   a crm:E55_Type ;
+    rdfs:label "Introduction"@en ;
+    skos:definition "A social event in which one person introduces two others who have not previously met."@en .
+
+:type_Translation    a crm:E55_Type ;
+    rdfs:label "Translation"@en ;
+    skos:definition "A creative act in which a source-language expression is rendered into a target-language expression."@en .
+
+    
+
+:concept_Computing a skos:Concept ;
+    skos:prefLabel "Computing"@en ;
+    skos:inScheme  :adaLovelaceConceptScheme ;
+    owl:sameAs     <http://id.loc.gov/authorities/subjects/sh85029552> .
+
+:concept_Mathematics a skos:Concept ;
+    skos:prefLabel "Mathematics"@en ;
+    skos:inScheme  :adaLovelaceConceptScheme ;
+    owl:sameAs     <http://id.loc.gov/authorities/subjects/sh85082139> .
+
+:concept_BernoulliNumbers a skos:Concept ;
+    skos:prefLabel "Bernoulli numbers"@en ;
+    skos:inScheme  :adaLovelaceConceptScheme ;
+    owl:sameAs     <https://www.wikidata.org/wiki/Q694114> .
+
+:concept_PoeticalScience a skos:Concept ;
+    skos:prefLabel "Poetical science"@en ;
+    skos:definition "Ada Lovelace's self-described approach combining imagination and mathematical rigour."@en ;
+    skos:inScheme  :adaLovelaceConceptScheme .
+
+:adaLovelaceConceptScheme a skos:ConceptScheme ;
+    dc:title "Ada Lovelace project subject scheme"@en .

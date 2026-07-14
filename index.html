@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ada Lovelace — LODLAM Project</title>
+    <style>
+      :root {
+        --gold: #b58900;
+        --dark: #3e3222;
+        --cream: #fdfbf4;
+        --paper: #f6f1e3;
+        --ink: #2b2b2b;
+        --blue: #1565c0;
+        --green: #2e7d32;
+        --purple: #6a1b9a;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Georgia, serif;
+        color: var(--ink);
+        background: var(--cream);
+        line-height: 1.7;
+      }
+
+      /* ---------- navigation ---------- */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(253, 251, 244, 0.96);
+        border-bottom: 2px solid var(--gold);
+        padding: 0.7em 1.2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3em 1.5em;
+        justify-content: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.88em;
+        backdrop-filter: blur(4px);
+      }
+      nav a {
+        color: var(--dark);
+        text-decoration: none;
+        letter-spacing: 0.3px;
+      }
+      nav a:hover {
+        color: var(--gold);
+      }
+
+      /* ---------- hero ---------- */
+      header.hero {
+        background: linear-gradient(
+          160deg,
+          var(--dark) 0%,
+          #6b5836 70%,
+          var(--gold) 130%
+        );
+        color: #fff;
+        text-align: center;
+        padding: 4em 1.5em 3.5em;
+      }
+      .hero img.portrait {
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.85);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+        margin-bottom: 1.2em;
+      }
+      .hero h1 {
+        font-size: 2.6em;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+      }
+      .hero .tag {
+        font-style: italic;
+        opacity: 0.85;
+        margin-top: 0.4em;
+        font-size: 1.05em;
+      }
+      .hero .credit {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.75em;
+        opacity: 0.6;
+        margin-top: 1.6em;
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      .stat {
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        padding: 0.6em 1.3em;
+        font-size: 0.85em;
+      }
+      .stat b {
+        display: block;
+        font-size: 1.5em;
+      }
+
+      /* ---------- layout ---------- */
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 1em 1.2em 4em;
+      }
+      section {
+        margin-top: 4em;
+      }
+      h2 {
+        color: var(--dark);
+        font-weight: normal;
+        font-size: 1.7em;
+        padding-bottom: 0.25em;
+        border-bottom: 2px solid var(--gold);
+        margin-bottom: 0.8em;
+      }
+      h2 .num {
+        color: var(--gold);
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.8em;
+        margin-right: 0.4em;
+      }
+      h3 {
+        color: var(--dark);
+        margin: 1.5em 0 0.5em;
+        font-size: 1.15em;
+      }
+      p {
+        margin: 0.8em 0;
+      }
+      a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      .lead {
+        font-size: 1.08em;
+      }
+      .question {
+        background: var(--paper);
+        border-left: 5px solid var(--gold);
+        padding: 1em 1.3em;
+        margin: 1.5em 0;
+        font-style: italic;
+      }
+
+      /* ---------- entity cards ---------- */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0.8em;
+        margin: 1em 0;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e8e0cc;
+        border-radius: 10px;
+        padding: 0.8em 1em;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      }
+      .card b {
+        display: block;
+      }
+      .card .role {
+        font-size: 0.86em;
+        color: #666;
+        margin: 0.2em 0 0.5em;
+      }
+      .etype {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.68em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .etype.person {
+        color: var(--blue);
+      }
+      .etype.place {
+        color: var(--green);
+      }
+      .etype.object,
+      .etype.org {
+        color: var(--purple);
+      }
+      .etype.work {
+        color: #9e8400;
+      }
+      .etype.event {
+        color: #b85c44;
+      }
+      .badge {
+        display: inline-block;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.7em;
+        padding: 1px 9px;
+        border-radius: 10px;
+        background: var(--paper);
+        color: #555;
+        text-decoration: none;
+        margin: 0 3px 3px 0;
+        border: 1px solid #e0d7bd;
+      }
+      .badge:hover {
+        background: var(--gold);
+        color: #fff;
+      }
+
+      /* ---------- figures / code / tables ---------- */
+      figure {
+        margin: 1.8em 0;
+        text-align: center;
+      }
+      figure img {
+        max-width: 100%;
+        border: 1px solid #e8e0cc;
+        border-radius: 8px;
+        background: #fff;
+        padding: 8px;
+      }
+      figcaption {
+        font-size: 0.85em;
+        color: #777;
+        margin-top: 0.5em;
+        font-style: italic;
+      }
+      pre {
+        background: var(--dark);
+        color: #f3ecd8;
+        padding: 1.1em 1.3em;
+        overflow-x: auto;
+        font-size: 0.82em;
+        border-radius: 10px;
+        line-height: 1.55;
+        margin: 1.2em 0;
+      }
+      code {
+        background: var(--paper);
+        padding: 1px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      pre code {
+        background: none;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 0.9em;
+        margin: 1em 0;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      th {
+        background: var(--paper);
+        text-align: left;
+        padding: 0.55em 0.8em;
+        color: var(--dark);
+      }
+      td {
+        padding: 0.5em 0.8em;
+        border-top: 1px solid #f0ead8;
+      }
+
+      .pipeline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.82em;
+        margin: 1.6em 0;
+      }
+      .pipeline .step {
+        background: #fff;
+        border: 1.5px solid var(--gold);
+        border-radius: 20px;
+        padding: 0.45em 1.1em;
+        color: var(--dark);
+      }
+      .pipeline .arrow {
+        color: var(--gold);
+        font-size: 1.3em;
+      }
+
+      /* ---------- downloads ---------- */
+      .dl {
+        list-style: none;
+        padding: 0;
+      }
+      .dl li {
+        background: #fff;
+        border: 1px solid #e8e0cc;
+        border-radius: 8px;
+        padding: 0.6em 1em;
+        margin: 0.5em 0;
+      }
+      .dl .desc {
+        color: #777;
+        font-size: 0.88em;
+      }
+
+      footer {
+        background: var(--paper);
+        border-top: 2px solid var(--gold);
+        margin-top: 4em;
+        padding: 2em 1em;
+        text-align: center;
+        color: #777;
+        font-size: 0.88em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================== HERO ==================== -->
+    <header class="hero">
+      <img
+        class="portrait"
+        src="Images/Ada.png"
+        alt="Portrait of Ada Lovelace (watercolour by A. E. Chalon, ca. 1840)"
+      />
+      <h1>Ada Lovelace</h1>
+      <p class="tag">
+        From a Wikipedia page to Linked Open Data — a LODLAM project
+      </p>
+      <div class="stats">
+        <div class="stat"><b>21</b> entities</div>
+        <div class="stat"><b>358</b> RDF triples</div>
+        <div class="stat"><b>5</b> reused vocabularies</div>
+        <div class="stat"><b>30+</b> authority links</div>
+      </div>
+      <p class="credit">
+        A project by Mayank Nautiyal · Information Science and Cultural Heritage
+        · University of Bologna · a.y. 2025–2026<br />
+        Portrait of Ada Lovelace, around 1840 — public domain image from
+        Wikimedia Commons
+      </p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#entities">Entities</a>
+      <a href="#models">Models</a>
+      <a href="#tei">TEI</a>
+      <a href="#data">Data</a>
+      <a href="#downloads">Files</a>
+    </nav>
+
+    <main>
+      <!-- ==================== ABOUT ==================== -->
+      <section id="about">
+        <h2><span class="num">01</span>About the project</h2>
+        <p class="lead">
+          Ada Lovelace (1815–1852) — mathematician, writer, and author of what
+          is often called the first published computer program. This project
+          takes the English Wikipedia article about her and turns it, step by
+          step, into
+          <strong>Linked Open Data</strong>: structured, machine-readable
+          knowledge connected to the world's shared cultural-heritage
+          vocabularies.
+        </p>
+        <div class="question">
+          How can the biography of a key figure in the history of computing —
+          with the works she wrote and the machines she described — be
+          represented as a graph that interoperates with Wikidata, VIAF,
+          GeoNames and the Library of Congress?
+        </div>
+        <figure>
+          <img src="Images/workflow.svg" alt="Visualization of the RDF graph" />
+          <figcaption>Protege Visualization of the OntoGraph</figcaption>
+        </figure>
+        <div class="pipeline">
+          <span class="step">Wikipedia page</span><span class="arrow">→</span>
+          <span class="step">Entities</span><span class="arrow">→</span>
+          <span class="step">Models</span><span class="arrow">→</span>
+          <span class="step">TEI/XML</span><span class="arrow">→</span>
+          <span class="step">HTML</span><span class="arrow">+</span>
+          <span class="step">RDF graph</span>
+        </div>
+        <p>
+          The modelling reuses <strong>CIDOC-CRM</strong> and
+          <strong>FRBRoo</strong>
+          (with SKOS, Dublin Core and OWL) — no new classes or properties were
+          invented. Two Python scripts transform the single TEI source into a
+          readable web page and a 358-triple RDF dataset.
+        </p>
+      </section>
+
+      <!-- ==================== ENTITIES ==================== -->
+      <section id="entities">
+        <h2><span class="num">02</span>The entities</h2>
+        <p>
+          Twenty-one entities of six types were selected from the article. Every
+          one is reconciled to external authority files — each badge below is a
+          clickable, individually verified identifier.
+        </p>
+
+        <h3>The central figure</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="etype person">person · topic</span>
+            <b>Ada Lovelace</b>
+            <span class="role"
+              >Augusta Ada King, Countess of Lovelace (1815–1852)</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q7259"
+              >Wikidata Q7259</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/61632881"
+              >VIAF 61632881</a
+            >
+          </div>
+        </div>
+
+        <h3>People</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="etype person">person</span><b>Charles Babbage</b>
+            <span class="role"
+              >Collaborator; designer of the Analytical Engine</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q46633"
+              >Q46633</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/4963723">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Lord Byron</b>
+            <span class="role">Father; Romantic poet</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q5679"
+              >Q5679</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/95230688">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span
+            ><b>Anne Isabella Milbanke</b>
+            <span class="role"
+              >Mother; promoted Ada's mathematical education</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q272161"
+              >Q272161</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/67258879">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>William King-Noel</b>
+            <span class="role">Husband, 1st Earl of Lovelace</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q4426480"
+              >Q4426480</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Mary Somerville</b>
+            <span class="role">Tutor; introduced Ada to Babbage in 1833</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q268702"
+              >Q268702</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/27288356">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Luigi Menabrea</b>
+            <span class="role"
+              >Author of the 1842 French article Ada translated</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q548672"
+              >Q548672</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/50029341">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Augustus De Morgan</b>
+            <span class="role">Tutor in advanced mathematics</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q208448"
+              >Q208448</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/29575875">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Charles Wheatstone</b>
+            <span class="role">Commissioned the translation</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q156942"
+              >Q156942</a
+            >
+            <a class="badge" href="http://viaf.org/viaf/54231425">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Michael Faraday</b>
+            <span class="role">Acquaintance in her scientific circle</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q8750"
+              >Q8750</a
+            >
+            <a class="badge" href="https://viaf.org/viaf/38158158/">VIAF</a>
+          </div>
+          <div class="card">
+            <span class="etype person">person</span><b>Charles Dickens</b>
+            <span class="role">Read to Ada during her final illness</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q5686"
+              >Q5686</a
+            >
+            <a class="badge" href="https://viaf.org/viaf/88666393/">VIAF</a>
+          </div>
+        </div>
+
+        <h3>Places &amp; organisation</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="etype place">place</span><b>London</b>
+            <span class="role">Birthplace and place of death</span>
+            <a class="badge" href="https://www.geonames.org/2643743"
+              >GeoNames</a
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q84">Q84</a>
+          </div>
+          <div class="card">
+            <span class="etype place">place</span
+            ><b>St Mary Magdalene, Hucknall</b>
+            <span class="role">Burial place, next to her father</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q5117286"
+              >Q5117286</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype place">place</span><b>Turin</b>
+            <span class="role">Site of Babbage's 1840 seminar</span>
+            <a class="badge" href="https://www.geonames.org/3165524"
+              >GeoNames</a
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q495">Q495</a>
+          </div>
+          <div class="card">
+            <span class="etype org">organisation</span
+            ><b>University of Turin</b>
+            <span class="role">Host of the seminar Menabrea transcribed</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q499911"
+              >Q499911</a
+            >
+          </div>
+        </div>
+
+        <h3>Objects &amp; works</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="etype object">object</span><b>Analytical Engine</b>
+            <span class="role"
+              >The designed (never built) general-purpose computer</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q485257"
+              >Q485257</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype object">object</span><b>Difference Engine</b>
+            <span class="role">The earlier calculator Ada saw in 1833</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q628007"
+              >Q628007</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype object">object</span
+            ><b>Ada (programming language)</b>
+            <span class="role">Named after her in 1980</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q154755"
+              >Q154755</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype work">work</span><b>The Notes (1843)</b>
+            <span class="role"
+              >Her translation + Notes A–G in Taylor's
+              <em>Scientific Memoirs</em></span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q139555665"
+              >Wikidata</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype work">work</span><b>Note G</b>
+            <span class="role"
+              >The Bernoulli algorithm — "the first computer program"</span
+            >
+            <a class="badge" href="http://www.wikidata.org/entity/Q123509784"
+              >Wikidata</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype work">work</span><b>Menabrea's article (1842)</b>
+            <span class="role">The French source text of the translation</span>
+            <a class="badge" href="http://www.wikidata.org/entity/Q4903513"
+              >Wikidata</a
+            >
+          </div>
+          <div class="card">
+            <span class="etype event">event</span
+            ><b>Translation event, 1842–43</b>
+            <span class="role"
+              >The creative act at the centre of the model</span
+            >
+            <span class="badge">event:translation_1842_1843</span>
+          </div>
+        </div>
+        <p>Full catalogue: <a href="01_entities.md">01_entities.md</a></p>
+      </section>
+
+      <!-- ==================== MODELS ==================== -->
+      <section id="models">
+        <h2><span class="num">03</span>The models</h2>
+
+        <h3>Theoretical model — in plain language</h3>
+        <p>
+          First, every relation was written as a simple sentence:
+          <em
+            >Ada was tutored by Mary Somerville · the Notes translates
+            Menabrea's article · the Notes contains Note G</em
+          >. Each sentence already has the subject–relation–object shape of a
+          future RDF triple.
+        </p>
+        <figure>
+          <img
+            src="TheoriticalModel/THMD.svg"
+            alt="Theoretical model mind map"
+          />
+          <figcaption>
+            The theoretical model (<a href="TheoriticalModel/THMD.svg"
+              >relations list</a
+            >)
+          </figcaption>
+        </figure>
+
+        <h3>Conceptual model — formalized by reuse</h3>
+        <p>
+          Every sentence was then refactored into terms from existing ontologies
+          — nothing new was invented. <strong>CIDOC-CRM</strong> is the backbone
+          because it is <em>event-centric</em>: a birth is an event node linking
+          person, place and time. <strong>FRBRoo</strong> adds the bibliographic
+          layers — the <em>Notes</em> as idea (F1), text (F2) and 1843 printing
+          (F4) — and its <code>R76_is_derivative_of</code> expresses precisely
+          what a translation is. <strong>SKOS</strong> handles the subjects,
+          <strong>Dublin Core</strong> the simple metadata, and
+          <strong>owl:sameAs</strong> ties every local entity to Wikidata, VIAF,
+          GeoNames and LCSH — the link in Linked Open Data.
+        </p>
+        <figure>
+          <img
+            src="ConceptualModel/CMEC.svg"
+            alt="Conceptual model — Graffoo schema"
+          />
+          <figcaption>
+            Schema level: reused classes and properties, Graffoo notation (<a
+              href="ConceptualModel/CMEC.svg"
+              >full mapping tables</a
+            >)
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="ConceptualModel/CMIB.svg"
+            alt="Instance-level worked example"
+          />
+          <figcaption>
+            Instance level: the translation chain as individuals
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ==================== TEI ==================== -->
+      <section id="tei">
+        <h2><span class="num">04</span>The TEI encoding</h2>
+        <p>
+          Selected sections of the article are encoded in
+          <a href="TEI_FIle_and_Conversion_Python_Code/04_ada_lovelace.tei.xml"
+            >TEI/XML</a
+          >. The principle: <em>describe once, reference many times</em>. The
+          header holds full entity lists — each entry with an
+          <code>xml:id</code> and its authority identifiers — and every mention
+          in the text points back with <code>ref="#id"</code>. Quotations,
+          citations and machine-readable dates are annotated alongside the named
+          entities.
+        </p>
+        <p>
+          ➡
+          <a href="TEI_FIle_and_Conversion_Python_Code/05_ada_lovelace.html"
+            ><strong>Read the rendered text</strong></a
+          >
+          — every entity is a clickable, colour-coded link to its authority
+          record, produced by
+          <a href="TEI_FIle_and_Conversion_Python_Code/05_tei2html.py"
+            >05_tei2html.py</a
+          >
+          (<code>python3 05_tei2html.py</code>).
+        </p>
+      </section>
+
+      <!-- ==================== DATA ==================== -->
+      <section id="data">
+        <h2><span class="num">05</span>The RDF dataset</h2>
+        <p>
+          <a href="TEI_FIle_and_Conversion_Python_Code/06_tei2rdf.py"
+            >06_tei2rdf.py</a
+          >
+          (Python + rdflib) reads the TEI and writes
+          <a href="TEI_FIle_and_Conversion_Python_Code/06_ada_lovelace.ttl"
+            >358 triples of Turtle</a
+          >: <em>harvested</em> triples taken mechanically from the header
+          (entities, alignments, dated birth/death events) plus
+          <em>modelled</em> triples that realise the conceptual model's events.
+          The heart of the graph:
+        </p>
+        <pre><code>event:translation_1842_1843
+    a                       frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by  person:ada ;
+    crm:P2_has_type         type:Translation ;
+    frbroo:R17_created      work:notes_1843 ;
+    frbroo:R18_created      manif:notes_1843_taylor .
+
+work:notes_1843
+    frbroo:R76_is_derivative_of  work:menabrea_1842 ;
+    crm:P148_has_component       work:note_g ;
+    crm:P129_is_about            obj:analytical_engine .
+
+person:ada  owl:sameAs  wikidata:Q7259 , viaf:61632881 .</code></pre>
+
+        <table>
+          <tr>
+            <th>Class</th>
+            <th>№</th>
+            <th>Class</th>
+            <th>№</th>
+          </tr>
+          <tr>
+            <td>crm:E52_Time-Span</td>
+            <td>24</td>
+            <td>frbroo:F2_Expression</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>crm:E21_Person</td>
+            <td>11</td>
+            <td>crm:E7_Activity</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>crm:E67_Birth / E69_Death</td>
+            <td>11 + 11</td>
+            <td>frbroo:F28_Expression_Creation</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>crm:E55_Type</td>
+            <td>5</td>
+            <td>crm:E5_Event</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>skos:Concept</td>
+            <td>4</td>
+            <td>crm:E74_Group · E12_Production</td>
+            <td>1 + 1</td>
+          </tr>
+          <tr>
+            <td>crm:E53_Place</td>
+            <td>3</td>
+            <td>frbroo:F1_Work · F4_Manifestation</td>
+            <td>1 + 1</td>
+          </tr>
+          <tr>
+            <td>crm:E22_Human-Made_Object</td>
+            <td>3</td>
+            <td>owl:ontology</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <figure>
+          <img
+            src="Images/Visualization.gif"
+            alt="Visualization of the RDF graph"
+          />
+          <figcaption>Protege Visualization of the OntoGraph</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Images/graphviz.svg" alt="Visualization of the RDF graph" />
+          <figcaption>
+            The full 358-triple graph, rendered with
+            <a
+              href="https://dreampuf.github.io/GraphvizOnline/?engine=fdp#digraph%20g%20%7B%0D%0A%09%22skos%3AConcept%22%20-%3E%20%22Mathematics%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Augustus%20De%20Morgan'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Augusta%20Ada%20King%20Countess%20of%20Lovelace'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF28_Expression_Creation%22%20-%3E%20%22'Translation%20of%20Menabrea%20and%20creation%20of%20the%20Notes%20(1842%E2%80%9A%C3%84%C3%AC43)'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221860-05-16%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22skos%3AConceptScheme%22%20-%3E%20%22concept%3AadaLovelaceConceptScheme%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF28_Expression_Creation%22%20-%3E%20%22'Writing%20of%20the%201842%20French%20article%20by%20Luigi%20Menabrea'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221871-10-18%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221802-02-06%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF2_Expression%22%20-%3E%20%22'Note%20G'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Augustus%20De%20Morgan'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Charles%20Wheatstone'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22frbroo%3AF28_Expression_Creation%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Luigi%20Federico%20Menabrea'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE12_Production%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE22_Human-Made_Object%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Augustus%20De%20Morgan'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221792-05-17%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22skos%3AConceptScheme%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE5_Event%22%20-%3E%20%22'Introduction%20of%20Ada%20Lovelace%20to%20Charles%20Babbage%20by%20Mary%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22skos%3AConcept%22%20-%3E%20%22'Poetical%20science'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221824-04-19%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Augustus%20De%20Morgan'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE7_Activity%22%20-%3E%20%22'Collaboration%20between%20Ada%20Lovelace%20and%20Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE7_Activity%22%20-%3E%20%22'Tutoring%20of%20Ada%20by%20Demorgan'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22frbroo%3AF2_Expression%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Charles%20Wheatstone'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221852-11-27%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221872-11-29%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221875-10-19%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Mary%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20George%20Gordon%20Byron%206th%20Baron%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22frbroo%3AF1_Work%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE21_Person%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221809-09-04%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE55_Type%22%20-%3E%20%22Burial%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Luigi%20Federico%20Menabrea'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22frbroo%3AF4_Manifestation_Singleton%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE7_Activity%22%20-%3E%20%22'Tutoring%20of%20Ada%20by%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF2_Expression%22%20-%3E%20%22'Notions%20sur%20la%20machine%20analytique%20de%20M.%20Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF2_Expression%22%20-%3E%20%22'Sketch%20of%20the%20Analytical%20Engine%20invented%20by%20Charles%20Babbage%2C%20Esq.%2C%20with%20notes%20by%20the%20translator'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Anne%20Isabella%20Milbanke%20Lady%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221791-12-26%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22skos%3AConcept%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Mary%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Charles%20Wheatstone'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE52_Time-Span%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221871-03-18%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'George%20Gordon%20Byron%206th%20Baron%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE5_Event%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221788-01-22%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20George%20Gordon%20Byron%206th%20Baron%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE55_Type%22%20-%3E%20%22Tutoring%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221896-05-24%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Augusta%20Ada%20King%20Countess%20of%20Lovelace'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Augusta%20Ada%20King%20Countess%20of%20Lovelace'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE55_Type%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE67_Birth%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Mary%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Anne%20Isabella%20Milbanke%20Lady%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE53_Place%22%20-%3E%20%22Turin%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE12_Production%22%20-%3E%20%22'Design%20of%20the%20Analytical%20Engine%20by%20Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE7_Activity%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221780-12-26%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22frbroo%3AF4_Manifestation_Singleton%22%20-%3E%20%22manif%3Anotes_1843_taylor%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Mary%20Somerville'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE55_Type%22%20-%3E%20%22Translation%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE69_Death%22%20-%3E%20%22'Death%20of%20Anne%20Isabella%20Milbanke%20Lady%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE53_Place%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE5_Event%22%20-%3E%20%22'Burial%20of%20Ada%20Lovelace'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE53_Place%22%20-%3E%20%22'Church%20of%20St%20Mary%20Magdalene'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE55_Type%22%20-%3E%20%22Introduction%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%22ts%3A1833-06-05%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE67_Birth%22%20-%3E%20%22'Birth%20of%20Luigi%20Federico%20Menabrea'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'George%20Gordon%20Byron%206th%20Baron%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22crm%3AE69_Death%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22skos%3AConcept%22%20-%3E%20%22'Bernoulli%20numbers'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Augusta%20Ada%20King%20Countess%20of%20Lovelace'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Luigi%20Federico%20Menabrea'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE55_Type%22%20-%3E%20%22Collaboration%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22foaf%3APerson%22%20-%3E%20%22'Anne%20Isabella%20Milbanke%20Lady%20Byron'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Charles%20Babbage'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22skos%3AConcept%22%20-%3E%20%22Computing%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221842%E2%80%9A%C3%84%C3%AC1843%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE53_Place%22%20-%3E%20%22London%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE22_Human-Made_Object%22%20-%3E%20%22'Analytical%20Engine'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221806-06-27%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22crm%3AE21_Person%22%20-%3E%20%22'Charles%20Wheatstone'%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%09%22owl%3AThing%22%20-%3E%20%22foaf%3APerson%22%20%5Blabel%3D%22has%20subclass%22%5D%0D%0A%09%22crm%3AE52_Time-Span%22%20-%3E%20%221815-12-10%22%20%5Blabel%3D%22has%20individual%22%5D%0D%0A%7D%0D%0A%0D%0A"
+              >Graphviz</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ==================== DOWNLOADS ==================== -->
+      <section id="downloads">
+        <h2><span class="num">06</span>All project files</h2>
+        <ul class="dl">
+          <li>
+            <a href="01_entities.md">01_entities.md</a>
+            <span class="desc"
+              >— entity catalogue with verified authority IDs</span
+            >
+          </li>
+          <li>
+            <a href="TheoriticalModel/02_theoretical_model.md"
+              >02_theoretical_model.md</a
+            >
+            ·
+            <a href="TheoriticalModel/THMD.svg">.svg</a>
+            <span class="desc">— relations in natural language + mind map</span>
+          </li>
+          <li>
+            <a href="ConceptualModel/03_conceptual_model.md"
+              >03_conceptual_model.md</a
+            >
+            · <a href="ConceptualModel/CMEC.svg">schema .svg</a> ·
+            <a href="ConceptualModel/CMIB.svg">instance .svg</a> ·
+            <a href="ConceptualModel/03_ontology.ttl">03_ontology.ttl</a>
+            <span class="desc"
+              >— mappings with reuse rationale, Graffoo diagrams, ontology file
+              (validated in Protégé)</span
+            >
+          </li>
+          <li>
+            <a
+              href="TEI_FIle_and_Conversion_Python_Code/04_ada_lovelace.tei.xml"
+              >04_ada_lovelace.tei.xml</a
+            >
+            <span class="desc">— the TEI/XML encoding</span>
+          </li>
+          <li>
+            <a href="TEI_FIle_and_Conversion_Python_Code/05_tei2html.py"
+              >05_tei2html.py</a
+            >
+            ·
+            <a href="TEI_FIle_and_Conversion_Python_Code/05_ada_lovelace.html"
+              >05_ada_lovelace.html</a
+            >
+            <span class="desc">— XML → HTML transformation + output</span>
+          </li>
+          <li>
+            <a href="TEI_FIle_and_Conversion_Python_Code/06_tei2rdf.py"
+              >06_tei2rdf.py</a
+            >
+            ·
+            <a href="TEI_FIle_and_Conversion_Python_Code/06_ada_lovelace.ttl"
+              >06_ada_lovelace.ttl</a
+            >
+            <span class="desc"
+              >— TEI → RDF transformation + the 358-triple dataset</span
+            >
+          </li>
+          <li>
+            <a href="Images/graphviz.svg">graphviz.svg</a>
+            <span class="desc">— RDF graph visualization</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Ada Lovelace LODLAM project · Mayank Nautiyal<br />
+      Information Science and Cultural Heritage · Master in Digital Humanities
+      and Digital Knowledge · University of Bologna · a.y. 2025–2026<br />
+      Source text:
+      <a href="https://en.wikipedia.org/wiki/Ada_Lovelace"
+        >Wikipedia — Ada Lovelace</a
+      >
+      (CC BY-SA 4.0)
+    </footer>
+  </body>
+</html>
