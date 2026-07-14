@@ -36,6 +36,6 @@ Both read `04_ada_lovelace.tei.xml` from the same folder.
 
 ---
 
-Mayank Nautiyal · source text from Wikipedia (CC BY-SA 4.0) ·
+Mayank Nautiyal · source text from Wikipedia ·
 portrait from Wikimedia Commons (public domain)
 
